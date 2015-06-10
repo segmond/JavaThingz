@@ -1,12 +1,12 @@
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.*; // java.awt.* doesn't automatically import the event package
 import javax.swing.*;
 
-public class HelloJava2 {
+public class HelloMouseDemo {
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Hello Java2");
-        frame.add(new HelloComponent2("Hello World!"));
+        JFrame frame = new JFrame("Hello Mouse Demo");
+        frame.add(new HelloComponent2("Hello World, Drag me around!"));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 300);
         frame.setVisible(true);
