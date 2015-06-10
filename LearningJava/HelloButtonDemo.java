@@ -53,6 +53,9 @@ class HelloButtonComponent extends JComponent implements MouseMotionListener, Ac
         }
     }
 
+    // the synchronized keyword indicates that the two methods with it will never be running at the same time
+    // they must always run in a mutually exclusive way, this is a way to prevent methods running in threads from
+    // avoiding conflict of resources
     synchronized private void changeColor() {
         setForeground(currentColor()); 
         repaint();
